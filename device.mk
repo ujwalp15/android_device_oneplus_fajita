@@ -20,6 +20,9 @@
 # included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
